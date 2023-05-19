@@ -1,0 +1,38 @@
+
+
+  #loginContainer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    width: 300px;
+    
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group input {
+    
+    width: 100%;
+  }
+  
+  .btn-primary {
+    text-align: center;
+    width: 40%;
+    
+  }
+  h2{
+    font-weight: 200px;
+    text-align: center;
+  }
+  
+  

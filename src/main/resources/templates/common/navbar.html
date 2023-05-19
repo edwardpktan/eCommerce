@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/" th:fragment="navbar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/navBar.css" rel="stylesheet">
+
+
+  <title>NavBar</title>
+</head>
+
+<body>
+
+  <!--This class do search-->
+
+  <div class="container-fluid d-flex">
+    <nav class="d-flex navbar navbar-expand-lg .bg-body overwritePadTopBottom">
+      <!--This class do flexbox-->
+      <div class="container d-flex">
+        <!--This class do hamburger menu-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--This codes is for the Mobile Navbar drop down .
+        To Center Navbar - added "container-fluid justify-content-center"
+      -->
+        <div class="mobileNavbar collapse navbar-collapse" id="navbarSupportedContent2">
+          <ul class="container-fluid justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+
+            <!-- <li class="mobileNavItems nav-item">
+              <a class="nav-link" aria-current="page" th:href="@{productListMain}" onclick="setCategory('category','neckTies')">Neck Ties</a>
+            </li>
+            <li class="mobileNavItems nav-item">
+              <a class="nav-link" href="#" onclick="setCategory('category','bowTies')">Bow Ties</a>
+            </li>
+            <li class="mobileNavItems nav-item">
+              <a class="nav-link" href="#" onclick="setCategory('category','tieClips')">Tie Clips</a>
+            </li>
+            <li class="mobileNavItems nav-item">
+              <a class="nav-link" href="#" onclick="setCategory('category','cuffLinks')">Cuff Links</a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--This is for the Search button-->
+    <div class="container d-flex justify-content-start">
+      <form class="d-flex" role="search" onsubmit="return false;">
+        <input id="searchInput" class="form-control me-2 overwriteHeight" type="search" placeholder="Search"
+          aria-label="Search">
+        <button class="btn btn-outline-primary me-2 overwriteHeight overwriteWidth" type="submit"
+          onclick="setQuery()">Search</button>
+      </form>
+    </div>
+
+    <!--This is for the Login, Sign Up button and Cart Logo-->
+    <div class="container d-flex justify-content-end">
+      <!--<button type="button" class="btn btn-outline-primary me-2 overwriteHeight overwriteWidth" >Login</button>-->
+      <a th:href="@{login}" class="btn btn-outline-primary me-2 overwriteHeight overwriteWidth">Login</a>
+
+      <!--<button type="button" class="btn btn-outline-primary me-2 overwriteHeight overwriteWidth">Sign-up</button>-->
+      <!--<a href="adminMain.html" class="btn btn-outline-primary me-2 overwriteHeight overwriteWidth" >Admin</a>-->
+
+      <ion-icon name="cart-outline" id="cart-outline" size="large"></ion-icon>
+    </div>
+  </div>
+  <p>
+    <hr class="hr" />
+  </p>
+
+  <!--This is for the breakdown for the hamburger menu for lg size-->
+  <nav class="navbar navbar-expand-lg .bg-body d-flex flex-column fs-5">
+    <div class="container-fluid">
+
+      <a class="navbar-brand d-flex align-items-center justify-content-center collapse navbar-collaps"
+        href="index"><img src="images/logo-png-white.jpg" width="20%" opacity="0.1" /></a>
+    </div>
+
+
+    <hr class="hr navbarHr" />
+
+
+    <!--This class do flexbox-->
+    <div class="container-fluid">
+
+      <!--This class do hamburger menu
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ -->
+
+      <!--This class do the normal menu on screen size > lg.
+     To Center Navbar - added "container-fluid justify-content-center"
+ -->
+      <div class="mainNavbar collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="container-fluid justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+          <!--<li class="nav-item mx-4">
+            <a class="nav-link" aria-current="page" href="productListMain.html" onclick="setCategory('category','neckTies')">Neck Ties</a>
+          </li>
+          <li class="nav-item mx-4" >
+            <a class="nav-link" href="#" onclick="setCategory('category','bowTies')">Bow Ties</a>
+          </li>
+          <li class="nav-item mx-4" >
+            <a class="nav-link" href="#" onclick="setCategory('category','tieClips')">Tie Clips</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#" onclick="setCategory('category','cuffLinks')">Cuff Links</a>
+          </li>-->
+        </ul>
+      </div>
+
+
+
+
+    </div>
+  </nav>
+
+  <div class="d-flex justify-content-center">
+    <hr class="hr navbarHr" />
+  </div>
+ <!-- <script src="js/myJS.js"></script>-->
+  <script src="js/navbar.js"></script>
+
+</body>
+
+</html>

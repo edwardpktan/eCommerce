@@ -1,0 +1,31 @@
+.modal-body table, th, td {
+    font-size: small;
+}
+
+.modal-body table th {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.modal-body span{
+    font-weight: bold;
+    color:blue;
+}
+
+.modal-body ul{
+    list-style-type: square;
+}
+
+.modal-body #productImgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#modalDescription {
+    color:black;
+    font-weight: 400;
+}
+
+#modalPrice {
+    color:black;
+}

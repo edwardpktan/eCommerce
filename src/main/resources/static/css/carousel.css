@@ -1,0 +1,34 @@
+
+
+
+
+#carouselExampleCaptions{
+    /*Set Carousel width and center*/
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Start of media for responsive design*/
+@media screen and (max-width: 992px) {
+
+
+    /*Set Carousel to 100% in mobile screen*/
+    #carouselExampleCaptions{
+        /*Set Carousel width and center*/
+        width:100%; 
+        margin: 0 auto;
+     
+    }
+
+}/*End of media for responsive design*/

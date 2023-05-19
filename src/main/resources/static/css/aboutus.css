@@ -1,0 +1,32 @@
+#aboutUsCard {
+  margin: 30px 20px;
+}
+
+#aboutUsPhoto img {
+  height: 200px;
+  width: 200px;
+}
+
+#teamNameWord {
+  margin: 30px 0;
+}
+
+#meetWord {
+  margin: 30px 0;
+}
+
+#theTeamWord {
+  margin-bottom: 30px;
+}
+
+#aboutUsBackgroundImg {
+  width: 100%;
+}
+
+#aboutUsBackgroundImg img {
+  width: 100%;
+}
+
+.card-body .memberName {
+    color: #cc8219;
+}
