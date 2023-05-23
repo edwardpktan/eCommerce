@@ -2,14 +2,14 @@
 
 // Product Controller
 
-//development APIs
-const displayProductAPI = 'http://localhost:8080/eScriptCoder/allProduct';
-const findProductAPI = 'http://localhost:8080/eScriptCoder/';
+// development APIs
+//const displayProductAPI = 'http://localhost:8080/eScriptCoder/allProduct';
+//const findProductAPI = 'http://localhost:8080/eScriptCoder/';
 
 
-//production APIs
-//const displayProductAPI = 'ourOwnURL/eScriptCoder/allProduct';
-//const findProductAPI = 'ourOwnURL/eScriptCoder/';
+// production APIs
+const displayProductAPI = 'https://edwardecommerce.azurewebsites.net/eScriptCoder/allProduct';
+const findProductAPI = 'https://edwardecommerce.azurewebsites.net/eScriptCoder/';
 
 // const displayProductAPI = 'https://webdemoedward.azurewebsites.net/product/all';
 

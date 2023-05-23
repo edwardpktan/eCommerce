@@ -30,3 +30,7 @@
 .card-body .memberName {
     color: #cc8219;
 }
+
+.card-footer a:hover {
+    opacity: 0.8;
+}

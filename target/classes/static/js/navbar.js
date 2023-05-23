@@ -3,11 +3,11 @@
 
 //const globalCategoryList =[];
 
+// development APIs
+//const displayCategoryAPI = 'http://localhost:8080/eScriptCoder/allCategory';
 
-const displayCategoryAPI = 'http://localhost:8080/eScriptCoder/allCategory';
-
-//production APIs
-//const displayCategoryAPI = 'ourOwnURL/eScriptCoder/allCategory';
+// production APIs
+const displayCategoryAPI = 'https://edwardecommerce.azurewebsites.net/eScriptCoder/allCategory';
 
 //const addAPI = 'https://fsdwebdemospring.azurewebsites.net/item/add';
 

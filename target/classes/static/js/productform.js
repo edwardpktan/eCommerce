@@ -1,8 +1,9 @@
 // development APIs
-const addAPI = 'http://localhost:8080/eScriptCoder/add';
+//const addAPI = 'http://localhost:8080/eScriptCoder/add';
 
-//production APIs
-//const addAPI = 'ourOwnURL/eScriptCoder/add';
+// production APIs
+const addAPI = 'https://edwardecommerce.azurewebsites.net/eScriptCoder/add';
+
 // const addAPI = 'https://webdemoedward.azurewebsites.net/product/add';
 
 // addProduct(name, description, imageURL, inventory, quantity, price, storeImage)
