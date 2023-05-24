@@ -1,70 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/" th:fragment="footer">
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Footer</title>
-    <link href="css/footer.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="navBarDiv col-md-4">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Links</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" th:href="@{aboutus}">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#othersModal" onclick="setModalShipping();" >Shipping Policy</a>
-                    </li>
+<div th:fragment="footer" class="container">
+    <div class="row">
+        <div class="navBarDiv col-md-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{aboutus}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#othersModal"
+                       onclick="setModalShipping();">Shipping Policy</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#othersModal" onclick="setModalRefund();">Refund Policy</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#othersModal"
+                       onclick="setModalRefund();">Refund Policy</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#othersModal" onclick="setModalPrivacy();">Privacy Policy</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="followUsDIV col-md-4">
-                <div class=" d-flex flex-column justify-content-center align-items-center">
-                    <h4>Follow Us</h4>
-                    <div class="d-flex ">
-                        <img src="images/twitter.jpg" alt="twitter" width="35px" style="margin:0 10px;" /><img
-                            src="images/facebook.jpg" alt="facebook" width="35px" style="margin:0 10px;" />
-                    </div>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#othersModal"
+                       onclick="setModalPrivacy();">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="followUsDIV col-md-4">
+            <div class=" d-flex flex-column justify-content-center align-items-center">
+                <h4>Follow Us</h4>
+                <div class="d-flex ">
+                    <img src="images/twitter.jpg" alt="twitter" width="35px" style="margin:0 10px;"/><img
+                        src="images/facebook.jpg" alt="facebook" width="35px" style="margin:0 10px;"/>
                 </div>
-
-            </div>
-            <div class=" col-md-4">
 
             </div>
 
         </div>
-        <div class="row">
-            <div class="paymentDiv">
+        <div class=" col-md-4">
 
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <div>
-                        <img src="images/PaymentGatewayImages.jpg" alt="Payment Gateway Images"
-                            style="margin:0 auto;" />
-                    </div>
+        </div>
 
+    </div>
+    <div class="row">
+        <div class="paymentDiv">
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <img src="images/PaymentGatewayImages.jpg" alt="Payment Gateway Images"
+                         style="margin:0 auto;"/>
                 </div>
 
             </div>
+
         </div>
     </div>
+</div>
 
 
 </body>
