@@ -32,25 +32,19 @@ public class MainController {
     private final CategoryService categoryService;
     private final ProductService productService;
 
-
     public MainController( @Autowired CategoryService categoryService , @Autowired ProductService productService)
     {
         this.categoryService = categoryService;
         this.productService = productService;
     }
 
-
     @CrossOrigin // Not in a valid domain, webbrowser wont allow us to call without this. Local host not a valid domain
     @GetMapping( "/allCategory" )
     public Iterable<Category> getCategorys()
     {
-
-
         //return in the controller represent a response to the client
         return this.categoryService.all();
     }
-
-
 
     @CrossOrigin // Not in a valid domain, webbrowser wont allow us to call without this. Local host not a valid domain
     @GetMapping( "/allProduct" )
@@ -101,7 +95,6 @@ public class MainController {
         return productService.findById(id);
     }
 
-
     @CrossOrigin
     @PostMapping("/add")
     public void save(  @RequestParam(name="productName", required = true) String productName,
@@ -126,11 +119,5 @@ public class MainController {
         productService.save(new Product(productDTO));
 
     }
-
-
-
-
-
-
 
 }

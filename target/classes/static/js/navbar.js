@@ -9,9 +9,6 @@
 // production APIs
 const displayCategoryAPI = 'https://edwardecommerce.azurewebsites.net/eScriptCoder/allCategory';
 
-//const addAPI = 'https://fsdwebdemospring.azurewebsites.net/item/add';
-
-
 const createDropDown = () => {
 
 //   //  <option value="">Please Select</option>
@@ -38,14 +35,6 @@ const createDropDown = () => {
  //console.log(dropDown.innerText);
     }
 }
-
-
-
-
-
-
-
-
 
 function displayCategory() {
     //fetch data from database using the REST API endpoint from Spring Boot
@@ -84,13 +73,6 @@ function displayCategory() {
            });
    //}
 }
-
-
-
-
-
-
-
 
 const createCategory = () =>{
  /*
@@ -147,8 +129,6 @@ const createNavbarHtml = ()=>{
 
     document.querySelector(".mainNavbar>ul").innerHTML = mainNavBarHtml;
     document.querySelector(".mobileNavbar>ul").innerHTML = mobileNavBarHtml;
-    
-
 
 }
 
@@ -245,10 +225,7 @@ const navigateToProductPage = () =>{
     //location.href = "productListMain.html";
     location.href = `product`;
 
-
 }
-
-
 
 const setQuery = () =>{
 
@@ -265,7 +242,10 @@ const setQuery = () =>{
             replaceWithIDFromGlobalCatList(result);
 //            console.log(result);
 
-            let resultStr = JSON.stringify(result);
+            const uniqueResult = Array.from(new Set(result));
+            console.log("uniqueResult :" + uniqueResult);
+
+            let resultStr = JSON.stringify(uniqueResult);
             setCategory('searchStringArray', resultStr);
             navigateToProductPage();
 

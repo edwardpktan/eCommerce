@@ -6,20 +6,15 @@
 //const displayProductAPI = 'http://localhost:8080/eScriptCoder/allProduct';
 //const findProductAPI = 'http://localhost:8080/eScriptCoder/';
 
-
 // production APIs
 const displayProductAPI = 'https://edwardecommerce.azurewebsites.net/eScriptCoder/allProduct';
 const findProductAPI = 'https://edwardecommerce.azurewebsites.net/eScriptCoder/';
-
-// const displayProductAPI = 'https://webdemoedward.azurewebsites.net/product/all';
 
 const noOfProduct = productList.length;
 //console.log("productList.length: " + noOfProduct);
 const noOfProductPerPage = 12;
 let currentPage;
 let noOfPages;
-
-
 
 
 function displayProduct() {
@@ -59,7 +54,6 @@ function displayProduct() {
 }
 
 
-
 const createProductHtml = (filteredProductArray, pageStart) => {
     console.log("Create Product List Html");
     let display = "";
@@ -85,17 +79,6 @@ const createProductHtml = (filteredProductArray, pageStart) => {
     document.querySelector("#row").innerHTML = display;
 
 } //End of createProductHtml function
-
-//function displayDetails(index) {
-//    //When user clicks on any "More" button, the details of the selected product will be displayed
-//    document.querySelector("#modalName").innerHTML = filteredProductList[index].productName;
-//    document.querySelector("#modalDescription").innerHTML = filteredProductList[index].description;
-//    document.querySelector("#modalPrice").innerHTML = filteredProductList[index].price;
-//    document.querySelector("#modalImg").src = filteredProductList[index].imageURL;
-//}
-
-
-
 
 const getPrevPage = () => {
     console.log("prev");
@@ -269,10 +252,6 @@ const displayProductList = (pageStart, pageEnd) => {
 
             catDisplay = category.display;
 
-
-
-
-
             let breadcrumbString = `<li class="breadcrumb-item"><a href="index">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">${catDisplay}</li>`;
 
@@ -287,8 +266,6 @@ const displayProductList = (pageStart, pageEnd) => {
                                     <li class="breadcrumb-item active" aria-current="page">ALL</li>`;
 
             document.querySelector("#breadcrumb").innerHTML = breadcrumbString;
-
-
 
         }
     } else {

@@ -19,10 +19,9 @@ public class FileUploadUtil {
 
     public static void saveFile(String uploadDir1, String fileName,
                                 MultipartFile multipartFile) throws IOException {
-//        local storage
+        //local storage
 //        Path uploadPath1 = Paths.get(uploadDir1);
 //        try (InputStream inputStream = multipartFile.getInputStream()) {
-//
 //
 //            Path filePath1 = uploadPath1.resolve(fileName);
 //            Files.copy(inputStream, filePath1, StandardCopyOption.REPLACE_EXISTING);
@@ -48,7 +47,6 @@ public class FileUploadUtil {
         //file name refers to which image filename that we want to upload to the container.(eg. t-shirt_new.jpg)
 
         BlobClient blobClient = containerClient.getBlobClient(fileName);
-
 
         InputStream inputStream = multipartFile.getInputStream();
         blobClient.upload(inputStream);

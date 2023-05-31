@@ -4,8 +4,6 @@
 // production APIs
 const addAPI = 'https://edwardecommerce.azurewebsites.net/eScriptCoder/add';
 
-// const addAPI = 'https://webdemoedward.azurewebsites.net/product/add';
-
 // addProduct(name, description, imageURL, inventory, quantity, price, storeImage)
 function addProduct(category_id, productName, description, product_url, inventory, price,
 imageObject)
@@ -17,10 +15,8 @@ imageObject)
     formData.append('description', description);
     formData.append('product_url', product_url);
     formData.append('inventory', inventory);
-    //formData.append('quantity', quantity);
     formData.append('price', price);
     formData.append('imagefile', imageObject);
-
 
     fetch(addAPI, {
         method: 'POST',
@@ -40,7 +36,6 @@ imageObject)
             alert("Error adding item to Product")
         });
 }
-  
 
 //Global variable - to store the image object
 let storeImage = ""
@@ -70,14 +65,12 @@ newItemForm.addEventListener('submit', (event) => {
    //const quantity = document.querySelector('#quantity').value;
    const price = document.querySelector('#newItemPrice').value;
 
-
   //3) calls a function from the productController.js to access the API to add items to the Database
    addProduct(category_id, productName, description, product_url, inventory, price,
    storeImage); //arguments
 
 
 });
-
 
 // select file input
 const input = document.querySelector('#productImage');
